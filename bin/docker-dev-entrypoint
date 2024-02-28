@@ -5,6 +5,8 @@ set -e
 if [ "$RAILS_ENV" = "development" ]; then
 echo "Preparing the Database ..."
   ./bin/rails db:prepare
+echo "test app"
+  ./bin/rails test
 fi
 
 exec "${@}"
