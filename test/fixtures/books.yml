@@ -11,3 +11,12 @@ lord_of_the_rings:
   editor: Pocket,
   collection: Fantasy,
   publication_date: 2018-09-1
+
+harry_potter:
+  EAN: 9782070615369,
+  title: Harry Potter,
+  author_id: 2,
+  editor: Gallimard,
+  collection: Fantasy,
+  publication_date: 2018-09-1
+  id: 1
