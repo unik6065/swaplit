@@ -4,15 +4,3 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-
-one:
-  first_name: value,
-  last_name: value,
-  date_of_birth: 2021-07-01
-
-
-#
-tolkien: # the key is the name of the fixture
-  first_name: J.R.R. # column: value
-  last_name: Tolkien # column: value
-  date_of_birth: 1892-01-03
