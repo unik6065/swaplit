@@ -5,6 +5,8 @@ set -e
 if [ "$RAILS_ENV" = "development" ]; then
 echo "Preparing the Database ..."
   ./bin/rails db:prepare
+  # remove a potentially pre-existing server.pid for Rails.
+  rm -f /rails/tmp/pids/server.pid
 fi
 
 exec "${@}"
