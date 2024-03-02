@@ -20,4 +20,9 @@ class AuthorTest < ActiveSupport::TestCase
     author = Author.new(first_name: 'John', last_name: 'Doe')
     assert_not author.save
   end
+
+  test 'should return a list of books' do
+    author = authors(:tolkien)
+    assert_equal 1, author.books.size
+  end
 end

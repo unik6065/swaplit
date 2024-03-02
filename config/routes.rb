@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   # add, modify, show and remove authors
   resources :authors, only: %i[create update show destroy]
+
+  resources :books, only: %i[index create update show destroy]
 end
