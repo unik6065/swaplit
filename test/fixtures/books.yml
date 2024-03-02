@@ -4,3 +4,10 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
+lord_of_the_rings:
+  EAN: 9782266286268,
+  title: Seigneur des anneaux,
+  author_id: 1,
+  editor: Pocket,
+  collection: Fantasy,
+  publication_date: 2018-09-1

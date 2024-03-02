@@ -16,3 +16,4 @@ tolkien: # the key is the name of the fixture
   first_name: J.R.R. # column: value
   last_name: Tolkien # column: value
   date_of_birth: 1892-01-03
+  id: 1

@@ -4,4 +4,6 @@ class Book < ApplicationRecord
   validates :collection, presence: true
   validates :publication_date, presence: true
   validates :title, presence: true
+
+  belongs_to :author
 end

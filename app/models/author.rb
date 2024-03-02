@@ -5,4 +5,7 @@ class Author < ApplicationRecord
   validates :first_name, presence: true
   # last name must be present
   validates :last_name, presence: true
+
+  # has many books
+  has_many :books
 end
