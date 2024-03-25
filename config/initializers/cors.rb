@@ -6,15 +6,13 @@
 # Read more: https://github.com/cyu/rack-cors
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
-  # allow creating a user only from the keycloak server
-  allow do
-    origins 'http://localhost:8080'
-    resource '/user', headers: :any, methods: %i[post delete]
-  end
-
   # allow all requests from the frontend except for the user creation and deletion
   allow do
-    origins '*'
-    resource '*', headers: :any, methods: %i[get post put patch delete options head]
+    origins 'http://localhost:3000'
+
+    resource '*',
+             headers: :any,
+             methods: %i[get post put patch delete options head],
+             expose: ['Authorization']
   end
 end
